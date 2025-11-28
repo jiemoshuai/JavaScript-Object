@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let cake = new Object();
+        cake.kinds = 'chocolate';
+        cake.size = '6寸';
+        console.log(cake);//使用Object（）构造函数创建
+        let cake1 = {
+            kinds:'fruit',
+            size:'8寸',
+        }
+        console.log(cake1);//使用对象字面量创建对象
+        function cake2(){
+            this.kinds = 'mixed flavors';
+            this.size = '9寸';
+        }
+        let Cake = new cake2();
+        console.log(Cake);//使用构造函数创建对象
+        
+    </script>
+</body>
+</html>
