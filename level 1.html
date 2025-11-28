@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr = [
+            {name:"lisa",age:21,gender:"woman"},
+            {name:"lisa",age:21,gender:"woman"},
+            {name:"lisa",age:21,gender:"woman"},
+        ]
+        console.table(arr);//直接创建
+        let obj = {name:"lisa",age:21,gender:"woman"};
+        let arr2 = [
+            {...obj},
+            {...obj},
+            {...obj},
+        ]
+        console.table(arr2);//利用展开运算符
+    </script>
+</body>
+</html>
